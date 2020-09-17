@@ -45,12 +45,7 @@ int main() {
             else { // 5以上
                 end_second_num = "0";
 
-                // 23時
-                if (stoi(end_fourth_num) == 2 && stoi(end_third_num) <= 3) {
-                    end_third_num = "0";
-                    end_fourth_num = "0";
-                }
-                else if (stoi(end_third_num) <= 8) {
+                if (stoi(end_third_num) <= 8) {
                     end_third_num = to_string(stoi(end_third_num) + 1);
                 }
                 else {
